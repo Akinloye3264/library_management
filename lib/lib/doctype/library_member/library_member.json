@@ -1,55 +1,55 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:BOOK-{####}",
- "creation": "2026-02-05 16:49:14.903661",
+ "autoname": "format:MEM-{####}",
+ "creation": "2026-02-09 16:21:35.376248",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "title",
-  "isbn",
-  "status",
-  "publisher",
-  "publication_date"
+  "library_member_section",
+  "first_name",
+  "last_name",
+  "email",
+  "phone"
  ],
  "fields": [
   {
-   "fieldname": "title",
+   "fieldname": "library_member_section",
+   "fieldtype": "Section Break",
+   "label": "LIbrary Member"
+  },
+  {
+   "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Title",
+   "label": "First Name",
    "reqd": 1
   },
   {
-   "fieldname": "isbn",
+   "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "ISBN"
+   "label": "Last Name"
   },
   {
-   "default": "Available",
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "label": "Status",
-   "options": "Available\nRented\nLost"
-  },
-  {
-   "fieldname": "publisher",
+   "fieldname": "email",
    "fieldtype": "Data",
-   "label": "Publisher"
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
   },
   {
-   "fieldname": "publication_date",
-   "fieldtype": "Date",
-   "label": "Publication Date"
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-09 16:18:59.838826",
+ "modified": "2026-02-09 16:41:36.273124",
  "modified_by": "Administrator",
  "module": "Lib",
- "name": "Book",
+ "name": "Library Member",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
